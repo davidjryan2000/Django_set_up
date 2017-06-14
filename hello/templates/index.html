@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<h2> Main Page </h2>
+
+
+<h3> List of Contacts </h3>
+
+
+
+<ul>
+    {% for contact in contacts_list %}
+        <li>{{contact}} - {{contact.mobile}} - {{contact.email}}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock content %}
